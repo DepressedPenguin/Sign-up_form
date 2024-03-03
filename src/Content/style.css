@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  margin: 5px;
+}
+
+body {
+  background-image: url(/src/imgs/bg-intro-desktop.png);
+  background-color: rgb(255, 121, 120);
+}
+
+.contnet {
+  background-color: rgb(255, 121, 120);
+  background-image: url(/src/imgs/bg-intro-desktop.png);
+  width: 98%;
+  height: 590px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left_side {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.left_side h1 {
+  font-size: 45px;
+  margin-right: 80px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.right_side {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 15% 85%;
+}
+
+.trial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trial .trial_place {
+  width: 97%;
+  height: 60%;
+  padding: 5px;
+  background-color: rgb(93, 84, 163);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 3px black;
+}
+.trial .trial_place p {
+  color: white;
+}
+.trial .trial_place #day_bold {
+  font-weight: 600;
+}
+
+input {
+  padding-left: 10px;
+}
+
+.inputs_place {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 19% 19% 19% 19% 17% 12%;
+}
+
+.input_place .input_f {
+  width: 98%;
+  border-radius: 5px;
+  height: 79%;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+input::-moz-placeholder {
+  padding: 30px;
+}
+
+input::placeholder {
+  padding: 30px;
+}
+
+.Button_calim {
+  background-color: white;
+}
+
+.btn_claim {
+  width: 98%;
+  background-color: rgb(55, 204, 138);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 5px;
+  height: 79%;
+  font-size: 17px;
+}
+
+.p_agree {
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+}
+
+#terms {
+  color: rgb(255, 121, 120);
+}
+
+@media screen and (max-width: 1200px) {
+  .contnet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .left_side {
+    display: flex;
+    align-items: center;
+  }
+  .left_side h1 {
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    margin-left: 75px;
+    text-decoration: none;
+  }
+  .left_side p {
+    text-align: center;
+    font-size: 19px;
+  }
+  .p_agree {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */

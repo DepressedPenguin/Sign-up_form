@@ -1,0 +1,192 @@
+// STYLE WITH SCSS
+
+* {
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  margin: 5px;
+  //   background-color: rgb(255 121 120);
+}
+
+body {
+  background-image: url(/src/imgs/bg-intro-desktop.png);
+  background-color: rgb(255 121 120);
+}
+
+// USE MIXING FOR RESUME THE FLIX
+@mixin Flex($justify-content) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// @mixin Grids(){
+//     grid-template-columns: repeat(2);
+// }
+
+.contnet {
+  background-color: rgb(255 121 120);
+  background-image: url(/src/imgs/bg-intro-desktop.png);
+  width: 98%;
+  height: 590px;
+
+  //   USE GRIDS
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-gap: 10px 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left_side {
+  // border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 45px;
+    margin-right: 80px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+  }
+  //   p {
+  //     font-size: 15px;
+  //   }
+}
+
+.right_side {
+  // border: 2px solid white;
+  //   USE GRIDS
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 15% 85%;
+}
+
+.trial {
+  // border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .trial_place {
+    width: 97%;
+    height: 60%;
+    padding: 5px;
+    background-color: rgb(93 84 163);
+    border-radius: 5px;
+
+    // USE FLIX
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // Use box shadow
+    box-shadow: 4px 4px 3px black;
+
+    p {
+      color: white;
+    }
+
+    #day_bold {
+      font-weight: 600;
+    }
+  }
+}
+
+input {
+  padding-left: 10px;
+}
+
+.inputs_place {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+
+  // USE GRIDS
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 19% 19% 19% 19% 17% 12%;
+  // grid-gap: 10px 10px;
+}
+
+.input_place {
+  // background-color: #191919;
+
+  .input_f {
+    width: 98%;
+    border-radius: 5px;
+    height: 79%;
+    font-size: 17px;
+    border: 1px solid grey;
+  }
+}
+
+input::placeholder {
+  padding: 30px;
+}
+
+.Button_calim {
+  // width: 90%;
+  background-color: white;
+}
+
+.btn_claim {
+  width: 98%;
+  background-color: rgb(55 204 138);
+  font-weight: 700;
+  color: white;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 5px;
+  height: 79%;
+  font-size: 17px;
+  // border: 1px solid grey;
+}
+
+.p_agree {
+  // background-color: #191919;
+  text-align: center;
+  font-size: 14px;
+  color: grey;
+}
+
+#terms {
+  color: rgb(255 121 120);
+}
+
+// Media qury
+@media screen and (max-width: 1200px) {
+  .contnet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    // grid-gap: 10px;
+  }
+
+  .left_side {
+    display: flex;
+    align-items: center;
+    // border: 2px solid red;
+  }
+
+  .left_side h1 {
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+    margin-left: 75px;
+    text-decoration: none;
+  }
+  .left_side p {
+    text-align: center;
+    font-size: 19px;
+  }
+  .left_side h1 br {
+    // display: none;
+  }
+
+  .p_agree {
+    font-size: 11px;
+  }
+}
