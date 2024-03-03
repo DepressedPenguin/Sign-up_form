@@ -12,3 +12,6 @@ A customizable React.js  sign-up form built with SCSS.
 
 Live Demo
 Check out the live demo https://signupformdp.netlify.app/
+
+IMG: 
+https://imgur.com/a/Xo7YLyn
