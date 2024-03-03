@@ -14,4 +14,4 @@ Live Demo
 Check out the live demo https://signupformdp.netlify.app/
 
 IMG: 
-https://imgur.com/a/Xo7YLyn
+![signupformdp netlify app_](https://github.com/DepressedPenguin/Sign-up_form/assets/125665615/b9e4e205-d56e-4f48-9afc-3b5e3f3148f6)
